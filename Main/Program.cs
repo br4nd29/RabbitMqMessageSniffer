@@ -36,8 +36,6 @@ namespace Main
                                $"{username}:{username}")));
             while (true)
             {
-                Thread.Sleep(1000);
-
                
                 var response = await client.GetAsync($"{domain}/api/queues/");
                 List<Models.Queue> tmp =   JsonConvert.DeserializeObject<Models.Queue[]>(await response.Content.ReadAsStringAsync()).ToList();
