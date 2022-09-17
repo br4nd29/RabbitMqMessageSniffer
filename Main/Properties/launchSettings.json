@@ -3,6 +3,9 @@
     "Main": {
       "commandName": "Project",
       "commandLineArgs": "http://n1.netcoretec.com:15672 guest guest"
+    },
+    "Docker": {
+      "commandName": "Docker"
     }
   }
 }

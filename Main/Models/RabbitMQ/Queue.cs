@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Main.Models
+namespace Main.Models.RabbitMQ
 {
     internal class Queue
     {
