@@ -1,3 +1,3 @@
-# RabbitMqMessageSniffer
+# RabbitMQMessageSniffer
 Сниффер для RabbitMQ
 
