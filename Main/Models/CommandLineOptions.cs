@@ -8,13 +8,13 @@ namespace Main.Models
     internal class CommandLineOptions
     {
         
-        [Option(longName:"domain",Required =true,HelpText ="Message broker domain")]
+        [Option(longName:"domain",shortName:'d',Required =true,HelpText ="Message broker domain")]
         public string Domain { get; set; }
-        [Option(longName:"username",Required =true)]
+        [Option(longName:"username",shortName:'u',Required =true)]
         public string Username {get;set;}
-        [Option(longName:"password",Required =true)]
+        [Option(longName:"password",shortName:'p',Required =true)]
         public string Password { get; set; }
-        [Option(longName:"timeout",Required = false,HelpText ="get queue timeout",Default =0)]
+        [Option(longName:"timeout",shortName:'t',Required = false,HelpText ="get queue timeout",Default =0)]
         public int Timeout { get; set; }
         [Usage(ApplicationAlias = ".\\RabbitMQSniffer.exe")]
         public static IEnumerable<Example> Examples 
